@@ -2,11 +2,17 @@ import Button from './component/Button'
 import Form from './component/Form'
 import Header from './component/Header'
 import Image from './component/Image'
+import Footer from './component/Footer'
+import Select from './component/Select'
 
 function App(){
   return(
     <>
       <Header />
+
+      {/* Select dropdown added here */}
+      <Select />
+
       <Form />
 
       <div className='flex justify-center gap-4'>
@@ -15,9 +21,8 @@ function App(){
         <Button click="Add"/>
       </div>
 
-      {/* This places the photo at the very end */}
-      <Image /> 
-      
+      <Image />
+      <Footer />
     </>
   )
 }
